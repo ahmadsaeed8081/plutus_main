@@ -80,20 +80,21 @@
             text-align: center;
           }
         }
-        padding-bottom: 80px;
+        padding-bottom:200px;
       }
       .hero-right {
+        padding-top: 50px;
         flex: 1;
         @include media("<=tablet") {
           align-items: center;
           justify-content: center;
         }
         .img {
-          height: 550px;
-          width: 530px;
+          // height: 550px;
+          width: 550px;
           object-fit: contain;
           z-index: 100;
-          background-color: #12131a;
+          // background-color: #12131a;
 
         }
       }
@@ -351,7 +352,7 @@
   }
   
   #tsparticles {   // This is the id of the div created by the Particles component
-    height: 100vh;
+    // height: 100vh;
     position: absolute;
     left: 0;
     right: 0;

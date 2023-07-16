@@ -108,7 +108,7 @@ const Home = () => {
                       },
                       particles: {
                         number: {
-                          value: 25,
+                          value: 30,
                           density: {
                             enable: false,
                             value_area: 400,
@@ -128,17 +128,17 @@ const Home = () => {
                           random: false,
                           anim: {
                             enable: false,
-                            speed: 1,
+                            speed: 8,
                             opacity_min: 0.1,
                             sync: false,
                           },
                         },
                         size: {
-                          value: 4,
+                          value: 2,
                           random: false,
                           anim: {
                             enable: false,
-                            speed: 30,
+                            speed: 300,
                             size_min: 0.1,
                             sync: false,
                           },
@@ -198,7 +198,7 @@ const Home = () => {
                             size: 40,
                             duration: 2,
                             opacity: 8,
-                            speed: 3,
+                            speed: 300,
                           },
                           repulse: {
                             distance: 100,

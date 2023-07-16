@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="footer-comp bg-themeColor flex flex-col">
       <div className="wrapWidth wrap flex flex-col">
         <div className="email-section flex items-end">
-          <div className="from-block flex flex-col">
+          {/* <div className="from-block flex flex-col">
             <div className="shape-block flex items-end">
               <div className="line-icon flex items-center justify-center">
                 <LinesIcon />
@@ -29,7 +29,7 @@ const Footer = () => {
               />
               <button className="btn-submit button">Submit</button>
             </div>
-          </div>
+          </div> */}
           <div className="meta-block flex flex-col">
             <h1 className="tag">Token Address</h1>
             <h1 className="token">
