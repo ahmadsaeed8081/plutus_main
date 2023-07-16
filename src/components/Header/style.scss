@@ -1,0 +1,144 @@
+// Header
+.header-camp {
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 80px;
+  padding: 30px 0px;
+  position: fixed;
+  @include media("<=tablet") {
+    display: none;
+  }
+  .wrap {
+    .left {
+      flex: 0.6;
+      .logo-img {
+        .logo {
+          height: 80px;
+        }
+      }
+    }
+    .center {
+      flex: 1.5;
+      @include media("<=tablet") {
+        display: none;
+      }
+      .menu-list {
+        margin-left: 60px;
+        gap: 30px;
+        .menu-item {
+          color: #fff;
+          text-align: center;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          cursor: pointer;
+          @include anim;
+          &:hover {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(90deg, #29d9aa, #7003fc);
+          }
+        }
+        .sub-menu {
+          position: absolute;
+          top: 20px;
+          right: 0;
+          width: 200px;
+          background: #000000;
+          border-radius: 8px;
+          padding: 10px;
+          .sub-menu-item {
+            width: 100%;
+            padding: 6px;
+            border-radius: 6px;
+            margin-bottom: 4px;
+            color: #fff;
+            cursor: pointer;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            &:hover {
+              -webkit-background-clip: text;
+              color: transparent;
+              background-image: linear-gradient(
+                90deg,
+                #29d9aa 0%,
+                #7003fc 100%
+              );
+            }
+          }
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      gap: 30px;
+      .action {
+        .btn-connect {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18.75px;
+          padding: 8px 20px;
+          border-radius: 6px;
+        }
+      }
+      .social-icons {
+        gap: 20px;
+        .icon {
+          height: 28px;
+          width: 28px;
+          svg {
+            height: 28px;
+            width: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-camp-mob {
+  display: none;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 80px;
+  padding: 30px 0px;
+  position: sticky;
+  @include media("<=tablet") {
+    display: flex;
+  }
+  .wrap {
+    gap: 12px;
+    .left {
+      flex: 1;
+    }
+    .center {
+      flex: 1;
+      .logo-img {
+        .logo {
+          height: 80px;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      .action {
+        .btn-connect {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18.75px;
+          padding: 8px 12px;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
